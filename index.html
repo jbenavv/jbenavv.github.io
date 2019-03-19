@@ -38,7 +38,7 @@
 				<img src="images/icons/logo.png" alt="LOGO">
 			</a>
                     <button id="authorize-button" align="left">Authorize</button>  
-                                <button id="signout-button" align="left">Sign Out</button>
+                                <button id="signout-button" style="display: none;" align="left">Sign Out</button>
 			<div>
 				
 				<button class="btn-show-contact100">
@@ -96,19 +96,10 @@
 
 
 				<div class="wrap-input100 validate-input">
-					<input id="telefono class="input100" type="text" name="phone" placeholder="ej. +1 800 000000">
+					<input id="telefono" class="input100" type="text" name="phone" placeholder="ej. +1 800 000000">
 					<span class="focus-input100"></span>
 					<label class="label-input100" for="phone">
 						<span class="lnr lnr-smartphone m-b-2"></span>
-					</label>
-				</div>
-
-
-				<div class="wrap-input100 validate-input">
-					<textarea id="direccion class="input100" name="message" placeholder="Dirección"></textarea>
-					<span class="focus-input100"></span>
-					<label class="label-input100 rs1" for="message">
-						<span class="lnr lnr-bubble"></span>
 					</label>
 				</div>
 
@@ -252,17 +243,19 @@
             while (range.values[i][0] === cedula) {
             cedula = range.values[i][1];         
 			
-			var nombre   = range.values[i][1];
+	    var nombre   = range.values[i][1];
             var apellido = range.values[i][2];			
             var telefono = range.values[i][4];
-			var direccion = range.values[i][3];
+            var correo    = range.values[i][5]		  
+	    
 				                                                                     
     }
 }
 document.getElementById("nombre").setAttribute("value",nombre);
 document.getElementById("apellido").setAttribute("value",apellido);
 document.getElementById("telefono").setAttribute("value",telefono);
-document.getElementById("direccion").setAttribute("value",direccion);
+document.getElementById("telefono").setAttribute("value",correo;
+
 
           } else {
             appendPre('No data found.');
